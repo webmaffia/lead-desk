@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intellion Lead Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M2 22 L14 12 V30 Z" fill="#d9d9d9"/><path d="M14 12 L24 4 V16 Z" fill="#b3b3b3"/>
+        <rect x="4" y="12" width="10" height="10" fill="#cbbba0"/><rect x="24" y="2" width="12" height="12" fill="#1c1c1c"/>
+        <rect x="14" y="22" width="12" height="12" fill="#7a6958"/><path d="M14 22 L26 14 H36 L26 22 Z" fill="#dcdcdc"/>
+      </svg>
+      <div><b>Intellion</b><small>Lead Desk</small></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      Signed in as
+      <select id="role">
+        <option value="admin">Admin · Priya Nair</option>
+        <option value="head">Regional Head · Rohit Sethi</option>
+        <option value="exec">Sales Exec · Ananya Rao</option>
+      </select>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="btn menu-btn" id="menu">☰</button>
+      <div><h1 id="title"></h1><div class="sub" id="subtitle"></div></div>
+      <div class="spacer"></div>
+      <span class="live"><i></i> Live</span>
+      <button class="btn sm" id="theme">Dark mode</button>
+      <button class="btn primary sm" id="simulate">+ Simulate new lead</button>
+    </header>
+    <main class="content" id="view"></main>
+  </div>
+</div>
+<div class="drawer-bg" id="drawerBg"><aside class="drawer" id="drawer"></aside></div>
+<div class="toast" id="toast"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
