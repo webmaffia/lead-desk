@@ -284,7 +284,6 @@ $('#simulate').onclick = simulate;
 $('#menu').onclick = () => $('#sidebar').classList.toggle('open');
 $('#drawerBg').onclick = e => { if (e.target.id === 'drawerBg') closeDrawer(); };
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
-$('#theme').onclick = () => { const d = document.documentElement; const dark = d.dataset.theme !== 'dark'; d.dataset.theme = dark ? 'dark' : 'light'; $('#theme').textContent = dark ? 'Light mode' : 'Dark mode'; };
 const route = () => { const h = location.hash.slice(1); state.view = VIEWS[h] ? h : 'overview'; render(); };
 window.addEventListener('hashchange', route); route();
 })();
